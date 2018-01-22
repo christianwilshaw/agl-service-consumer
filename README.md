@@ -11,8 +11,8 @@ Some code to consume the json and output a list of all the cats in alphabetical 
 3. npm run test 
 	- To run the unit tests.
 	
-#Tools used:
-	 - Webpack 2.2 as the module bundler.
-	 - Babel JS as the compiler.
-	 - Mocha JS as the testing framework.
-	 - Chai as the assertion library.
+## Tools used:
+	- Webpack 2.2 as the module bundler.
+	- Babel JS as the compiler.
+	- Mocha JS as the testing framework.
+	- Chai as the assertion library.
