@@ -1,0 +1,42 @@
+{
+  "name": "agl-code-test",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "lint": "eslint ** --fix",
+    "precommit": "npm run lint",
+    "build-dev": "webpack --optimize-minimize --progress --watch --devtool source-map",
+    "build": "webpack --progress -p",
+    "server": "webpack-dev-server --hot --progress --inline",
+    "start": "concurrently --kill-others \"npm run build-dev\" \"npm run server\"",
+    "test": "npm run unittest",
+    "unittest": "mocha  --sort test/**.spec.js --compilers js:babel-core/register --recursive"
+  },
+  "author": "Christian Wilshaw",
+  "dependencies": {
+    "async": "2.3.0",
+    "superagent": "3.5.1",
+    "superagent-legacyiesupport": "1.0.1"
+  },
+  "devDependencies": {
+    "apimocker": "0.5.0",
+    "babel-register": "6.24.0",
+    "chai": "3.5.0",
+    "concurrently": "3.4.0",
+    "copy-webpack-plugin": "^4.0.1",
+    "css-loader": "0.27.3",
+    "eslint": "3.18.0",
+    "eslint-plugin-react": "^7.5.1",
+    "mocha": "3.2.0",
+    "mustache-loader": "0.4.1",
+    "nock": "9.0.9",
+    "proxyquire": "1.7.11",
+    "script-loader": "0.7.0",
+    "sinon": "2.1.0",
+    "static-server": "2.0.4",
+    "style-loader": "0.15.0",
+    "webpack": "2.2.1",
+    "webpack-dev-server": "2.4.2",
+    "webpack-notifier": "1.5.0"
+  }
+}
