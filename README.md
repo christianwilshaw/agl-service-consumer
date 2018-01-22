@@ -3,7 +3,7 @@ Some code to consume the json and output a list of all the cats in alphabetical 
 
 ## To run the project:
 
-1. npm run install (run the once only!)
+1. npm run install (run once only!)
 
 2. npm run start
 	- The site can be accessed on: http://localhost:3333/source/src/index.htm
