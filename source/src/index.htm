@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="app.css">
+    <title>AGL Test</title>
+</head>
+<body id="agl">
+    <div id="content-wrapper" class="responsive">
+        <div id="main-container">
+            <div id="widget-heading" class="clearfix" tabindex="1">
+            <h3 class="float-left">
+                <span class="heading-text">People with Animals</span>
+            </h3>
+            </div>         
+            <script src="../bundle/dev/agl.min.js"></script>
+            <script>
+                agldevtest.load("main-container", {
+                }, function () {
+                    $("#main-container").hide();
+                });
+            </script>
+        </div>
+    </div>
+    </div>
+</body>
+</html>
